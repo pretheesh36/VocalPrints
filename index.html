@@ -1,0 +1,843 @@
+<!doctype html>
+<html>
+
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300&display=swap" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Literata:wght@200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+
+		<style> 
+
+
+				* {
+
+						box-sizing: border-box;
+				}
+
+				body {
+
+
+						background-color: #000000;
+						color:  #ffffff;
+						height: 100vh;
+					/*	font-family: 'Six Caps', sans-serif;
+						font-family: 'Dosis', sans-serif; */
+						font-family: 'Dosis', sans-serif;
+						background-image: url('bg.jpg');
+						background-size: cover;
+
+				}
+
+
+				.header {
+
+							width: 100%;
+							height: 10vh;
+
+						/*	float: left; */
+
+
+							box-sizing: border-box;
+				}
+
+
+				.parent_div {
+
+
+								height: 90vh;
+								text-align: center;
+								box-sizing: border-box;
+
+				}
+
+
+				.longtype {
+
+
+							background-color: transparent; 
+							color:  #ffffff;
+							font-size: 172px;
+							font-size: 72px;
+						    font-weight: 100;
+						    text-transform: lowercase;
+						    letter-spacing: -12px;
+						    white-space: normal;
+						    text-align: justify;
+						    -moz-text-align-last: center;
+						    text-align-last: center;
+						    font-family: 'Dosis', sans-serif;
+						    font-family: 'Akshar', sans-serif;
+						    font-family: 'Literata', serif;
+						    font-family: 'Special Elite', cursive;
+						    line-height: 180px;
+
+						/*    width: 100% !important; 
+							height: 70% !important;
+						*/
+							min-width: 10%;
+							height: max-content;
+							min-height: 16vh;
+							max-width: 100%;
+							width: max-content;
+							height: auto;
+						/*	max-height: 100% !important; */
+
+						/*    float: left;           */
+
+						    border: dashed 1px;
+						    outline: none;
+						    position: absolute;
+						/*    top : 50%;
+						    left: 50%;
+						    -ms-transform: translate(-50%, -50%);
+						    transform    : translate(-50%, -50%); 
+						*/
+					
+						    word-wrap: break-word;
+
+						    padding: 16px;
+
+
+
+
+				}
+
+
+				textarea {
+
+
+							resize: none;
+
+				}
+
+				.footer {
+
+							width: 100%;
+							height: 5vh;
+
+							float: left;
+							text-align: center;
+							padding-top: 3vh;
+
+				}
+
+				.texts {
+
+
+							width: 60%;
+							height: 15vh;
+							font-size: 10px;
+							float: left;
+							padding: 20px;
+							word-wrap: break-word;
+							text-transform: uppercase;
+				}
+
+				#copyright {
+
+
+							width: 30%;
+							margin-left: 10%;
+							font-size: 14px;
+							text-align: center;
+							float: left;
+
+				}
+
+				#brand {
+
+
+					    margin-left: 5%;
+					    width: 20%;
+					    height: 7.5vh;
+					    padding-top: 1vh;
+					    font-size: 4vh;
+					    text-align: center;
+					    margin-top: 1.25vh;
+
+					    float: left;
+
+					    box-sizing: border-box;
+
+
+				}
+
+				#menus {
+
+						width: 40%;
+						height: 5vh;
+
+
+						margin-left: 30%;
+						margin-top: 2.5vh;
+
+						float: right;
+						margin-right: 5%;
+
+						padding-top: 1.25vh;
+
+						box-sizing: border-box;
+
+						font-size: 1.5vh;
+
+
+				}
+
+
+				#settings {
+
+							float: left;
+							width: 25%;
+							height: 50%;
+							text-align: right;
+							text-decoration: underline;
+							text-decoration-color: green;
+
+
+				}
+
+
+				#settings:hover {
+
+								cursor: pointer;
+
+				}
+
+
+				.parent_div {
+
+
+								height: 90vh;
+								padding: auto;
+								position: relative;
+				}
+
+				#popup {
+
+
+									border: solid;
+								    background-color: #FFFFFF;
+								    display: none;
+								    position: absolute;
+								    width: 50%;
+								    margin-top: -75vh;
+								    margin-left: 25%;
+								    margin-bottom: 0;
+								    height: 50vh;
+								    z-index: 5;
+								    color: #000000;
+
+
+				}
+
+
+
+				input {
+
+					/*		display: block;
+							width: 75%;
+							float: left;
+							margin:  auto;
+
+					*/
+
+							width: 100%;
+
+				}
+
+
+				fieldset {
+
+
+							width: 90%;
+							margin-left: 5%;
+							height: 10vh;
+				}
+
+
+				.close {
+
+
+						float: right;
+						margin-top: 0;
+						height: auto;
+						font-size: 5vh;
+						text-decoration: underline;
+						cursor: pointer;
+						background-color: red;
+						color: #FFFFFF;
+				}
+
+				#colored {
+
+
+								background-color: rgb(0,0,0);
+							    width: 90%;
+							    margin-left: 5%;
+							    height: 5vh;
+							    margin-top: 1.5vh;
+				}
+
+				main {
+
+							margin: 0;
+				}
+
+				.color {
+
+						border-radius: 50%;
+						width: 20px;
+						height: 20px;
+						cursor: pointer;
+						display: inline-block;
+				}
+
+				#c1 {
+
+						border-radius: 50%;
+						width: 20px;
+						height: 20px;
+						cursor: pointer;
+
+
+				}
+
+
+
+				.fontColors {
+
+
+							height: 5vh;
+							width: 95%;
+							margin-left: 2.5%;
+
+							display: flex;
+							justify-content: space-around;
+							align-items: center;
+
+							position: fixed;
+							z-index: 10;
+
+				}
+
+
+
+				.fontColorsBg {
+
+
+							height: 5vh;
+							width: 95%;
+							margin-left: 2.5%;
+
+							margin-top: 90vh;
+
+							display: flex;
+							justify-content: space-around;
+							align-items: center;
+
+							position: fixed;
+							z-index: 10;
+
+				}
+
+				.quoteBox {
+
+
+							width: 256px;
+						    height: auto;
+						    background: #ffffff;
+						    color: #000000;
+						    font-size: 12px;
+						    position: fixed;
+						    margin-left: 80%;
+						    float: left;
+						    margin-top: 64px;
+						    border: solid #ffffff;
+						    border-radius: 4%;
+						    font-family: monospace;
+						    padding: 2%;
+						    box-sizing: border-box;
+						    opacity: 20%;
+						    font-weight: 100;
+						    z-index: 2;
+				}
+
+				.quoteBox:hover {
+
+							opacity: 90%;
+							font-weight: 100;
+							cursor: pointer;
+							font-size: 16px;
+				}
+
+
+				.snippetBox {
+
+
+							width: 728px;
+						    height: auto;
+						    background: #ffffff;
+						    color: #000000;
+						    font-size: 12px;
+						    position: fixed;
+						    margin-left: 4%;
+						    float: left;
+						    margin-top: 75vh;
+						    border: solid #ffffff;
+						    border-radius: 1%;
+						    font-family: monospace;
+						    padding: 2%;
+						    box-sizing: border-box;
+						    opacity: 20%;
+						    font-weight: 100;
+						    z-index: 2;
+				}
+
+				.snippetBox:hover {
+
+							opacity: 90%;
+							font-weight: 100;
+							cursor: pointer;
+							font-size: 16px;
+				}
+
+
+				iframe {
+
+						position: fixed;
+						width: 100%;
+						height: 100vh;
+						opacity: 0.15;
+
+				}
+
+
+
+				.audio {
+
+										width: 100%;
+										height: 5vh;
+										background-color: #0000001f;
+										color: #00ff08;
+										margin-top: 94vh;
+										position: absolute;
+
+										display: flex;
+										justify-content: space-around;
+										align-items: center;
+										font-family: monospace;
+				}
+
+
+
+
+		</style>
+
+
+		<script type="text/javascript">
+			
+					function space() {
+
+
+
+
+
+										if(event.keyCode=='27'){
+
+
+												event.preventDefault();
+
+												document.getElementById('long').innerHTML='';
+												document.getElementById('long').focus();
+												document.getElementById('long').style.fontSize='172px';
+											//	document.getElementById('long').style.width='10%';
+
+
+											
+
+
+										}
+
+
+										else {
+
+
+
+										}					
+
+
+
+
+
+					}
+
+
+
+					function popup(l){
+
+
+									console.log(l);
+									if(l=='c'){
+
+										document.getElementById('b').style.display='none';
+										document.getElementById('i').style.display='none';
+									}
+									document.getElementById('popup').style.display='block';
+									document.getElementById('mainPage').style.opacity='10%';
+
+
+					}
+
+
+
+					function closeP(){
+
+
+						      		document.getElementById('popup').style.display='none';
+									document.getElementById('mainPage').style.opacity='100%';
+
+
+					}
+
+					function clearAll(){
+
+
+								document.getElementById('texts').innerHTML='';
+								document.getElementById('long').innerHTML='';
+
+					}
+
+					function calcColor(){
+
+
+								let r1= document.getElementById('red').value;
+								let g1= document.getElementById('green').value;
+								let b1= document.getElementById('blue').value;
+
+								let color = r1+g1+b1;
+
+								alert(color);
+
+
+
+					}
+
+
+					function CopyToClipboard(containerid) {
+						 
+
+					    if (window.getSelection) {
+					        if (window.getSelection().empty) { // Chrome
+					            window.getSelection().empty();
+					        } else if (window.getSelection().removeAllRanges) { // Firefox
+					            window.getSelection().removeAllRanges();
+					        }
+					    } else if (document.selection) { // IE?
+					        document.selection.empty();
+					    }
+
+					    if (document.selection) {
+					        var range = document.body.createTextRange();
+					        range.moveToElementText(document.getElementById(containerid));
+					        range.select().createTextRange();
+					        document.execCommand("copy");
+					    } else if (window.getSelection) {
+					        var range = document.createRange();
+					        range.selectNode(document.getElementById(containerid));
+					        window.getSelection().addRange(range);
+					        document.execCommand("copy");
+					    }
+
+					    console.log("copied");
+
+					}
+
+
+
+
+				function playAudio(e) {
+
+								console.log('playAudio');
+
+
+								let key=e.keyCode || e.which;	
+
+
+
+								if (key==32 || key==38 || key==40){
+
+								  				document.getElementById('audio').src="../sounds/page0.mp3";
+
+								}
+
+
+								else if (key==13){
+
+								  				document.getElementById('audio').src="../sounds/print0.mp3";
+
+								}
+
+
+								else if(e.keyCode >= 48 && e.keyCode <= 57) {
+
+
+											let x = Math.floor(Math.random() * (4 - 3 + 1) + 3)
+
+
+								  				document.getElementById('audio').src="../sounds/cut"+x+".mp3";
+
+
+
+								}
+
+
+								else {
+
+								  				document.getElementById('audio').src="../sounds/stamp0.mp3";
+
+
+								}
+
+								pauseAudio();
+
+
+								document.getElementById('audio').play();
+				}
+
+				function pauseAudio() {
+
+								console.log('pauseAudio');
+
+								document.getElementById('audio').pause();
+				}
+
+
+
+
+
+
+		</script>
+
+			<script src="allQuotes.txt"></script>
+			<script src="snippets.txt"></script>
+
+
+</head>
+
+<body onkeyup="space();" onload="showQuote();">
+
+
+<audio id="audio" controls style="display:none">
+  <source src="" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+
+<!--
+<iframe class="mainIframe" id="mainIframe" modestbranding="1" rel="1" src="https://www.youtube.com/embed/vrAMRxBB5KI?autoplay=1"></iframe>	
+-->
+
+<main>
+
+
+<div class="fontColors">
+
+	<div class="colorful">
+
+	<span id="c1" style="background-color: #f44336;" class="color" onclick="document.getElementById('long').style.color='#f44336'"></span>
+	<span id="c1" style="background-color: #e91e63;" class="color" onclick="document.getElementById('long').style.color='#e91e63'"></span>
+	<span id="c1" style="background-color: #9c27b0;" class="color" onclick="document.getElementById('long').style.color='#9c27b0'"></span>
+	<span id="c1" style="background-color: #673ab7;" class="color" onclick="document.getElementById('long').style.color='#673ab7'"></span>
+
+	</div>
+
+	<div class="colorful">
+
+	<span id="c1" style="background-color: #3f51b5;" class="color" onclick="document.getElementById('long').style.color='#3f51b5'"></span>
+	<span id="c1" style="background-color: #2196f3;" class="color" onclick="document.getElementById('long').style.color='#2196f3'"></span>
+	<span id="c1" style="background-color: #03a9f4;" class="color" onclick="document.getElementById('long').style.color='#03a9f4'"></span>
+	<span id="c1" style="background-color: #00bcd4;" class="color" onclick="document.getElementById('long').style.color='#00bcd4'"></span>
+
+	</div>
+
+	<div class="colorful">
+	<span id="c1" style="background-color: #009688;" class="color" onclick="document.getElementById('long').style.color='#009688'"></span>
+	<span id="c1" style="background-color: #4caf50;" class="color" onclick="document.getElementById('long').style.color='#4caf50'"></span>
+	<span id="c1" style="background-color: #8bc34a;" class="color" onclick="document.getElementById('long').style.color='#8bc34a'"></span>
+	<span id="c1" style="background-color: #cddc39;" class="color" onclick="document.getElementById('long').style.color='#cddc39'"></span>
+	</div>
+
+
+
+	<!-- adding more colors -->
+
+	<div class="colorful">
+	<span id="c1" style="background-color: #ffeb3b;" class="color" onclick="document.getElementById('long').style.color='#ffeb3b'"></span>
+	<span id="c1" style="background-color: #ffc107;" class="color" onclick="document.getElementById('long').style.color='#ffc107'"></span>
+	<span id="c1" style="background-color: #ff9800;" class="color" onclick="document.getElementById('long').style.color='#ff9800'"></span>
+	<span id="c1" style="background-color: #ff5722;" class="color" onclick="document.getElementById('long').style.color='#ff5722'"></span>
+	</div>
+
+	<div class="colorful">
+	<span id="c1" style="background-color: #9e9e9e;" class="color" onclick="document.getElementById('long').style.color='#9e9e9e'"></span>
+	<span id="c1" style="background-color: #795548;" class="color" onclick="document.getElementById('long').style.color='#795548'"></span>
+	<span id="c1" style="background-color: #000000;" class="color" onclick="document.getElementById('long').style.color='#000000'"></span>
+	<span id="c1" style="background-color: #ffffff;" class="color" onclick="document.getElementById('long').style.color='#ffffff'"></span>
+	</div>
+
+	<div class="colorful">
+	<span id="c1" style="background-color: red;" class="color" onclick="document.getElementById('long').style.color='red'"></span>
+	<span id="c1" style="background-color: blue;" class="color" onclick="document.getElementById('long').style.color='blue'"></span>
+	<span id="c1" style="background-color: yellow;" class="color" onclick="document.getElementById('long').style.color='yellow'"></span>
+	<span id="c1" style="background-color: green;" class="color" onclick="document.getElementById('long').style.color='green'"></span>
+	</div>
+
+	
+
+
+</div>
+
+
+
+
+
+	<!-- adding more background colors -->
+<div class="fontColorsBg">
+
+	<div class="colorful">
+	<span id="c1" style="background-color: transparent; border: solid 1px #ffffff;" class="color" onclick="document.getElementById('long').style.backgroundColor='transparent'"></span>
+	<span id="c1" style="background-color: rgb(255,0,235,0.25);" class="color" onclick="document.getElementById('long').style.backgroundColor='rgb(255,0,235,0.25)'"></span>
+	<span id="c1" style="background-color: rgb(255,0,0,0.25);" class="color" onclick="document.getElementById('long').style.backgroundColor='rgb(255, 0, 0, 0.25)'"></span>
+	<span id="c1" style="background-color: #ff5722;" class="color" onclick="document.getElementById('long').style.backgroundColor='#ff5722'"></span>
+	</div>
+
+	<div class="colorful">
+	<span id="c1" style="background-color: rgb(255, 68, 0, 0.25);" class="color" onclick="document.getElementById('long').style.backgroundColor='rgb(255, 68, 0, 0.25)'"></span>
+	<span id="c1" style="background-color: rgb(228, 255, 0, 0.25);" class="color" onclick="document.getElementById('long').style.backgroundColor='rgb(228, 255, 0, 0.25)'"></span>
+	<span id="c1" style="background-color: rgb(98, 255, 0, 0.25);" class="color" onclick="document.getElementById('long').style.backgroundColor='rgb(98, 255, 0, 0.25)'"></span>
+	<span id="c1" style="background-color: #ffffff;" class="color" onclick="document.getElementById('long').style.backgroundColor='#ffffff'"></span>
+	</div>
+
+	<div class="colorful">
+	<span id="c1" style="background-color: rgb(0, 255, 161, 0.25);" class="color" onclick="document.getElementById('long').style.backgroundColor='rgb(0, 255, 161, 0.25)'"></span>
+	<span id="c1" style="background-color: rgb(0, 220, 255, 0.25);" class="color" onclick="document.getElementById('long').style.backgroundColor='rgb(0, 220, 255, 0.25)'"></span>
+	<span id="c1" style="background-color: rgb(39, 0, 255, 0.25);" class="color" onclick="document.getElementById('long').style.backgroundColor='rgb(39, 0, 255, 0.25)'"></span>
+	<span id="c1" style="background-color: rgb(133, 0, 255, 0.25);" class="color" onclick="document.getElementById('long').style.backgroundColor='rgb(133, 0, 255, 0.25)'"></span>
+	</div>
+
+	
+
+
+</div>
+
+
+<div onclick="CopyToClipboard(this.id), document.getElementById('long').innerHTML=document.getElementById(this.id).innerHTML, nextQuote();" id="qBox" class="quoteBox">You will not allow your habit energy to carry you away in compulsively thinking of something in the past or the future , of this or that project. You train yourself to stop, to relax and be at peace.</div>
+
+
+<div onclick="CopyToClipboard(this.id), document.getElementById('long').innerHTML=document.getElementById(this.id).innerHTML, nextSnippet();" id="sBox" class="snippetBox">Turning away from your familiar thoughts and attending to your body in a deeply meditative way will help you to see the next layer of subconscious material that is coming up for healing and integration.And, it should be noted, that if you do not pay attention to your emerging growth edge every day, it is possible to become emotionally accumulated and increasingly overwhelmed.
+</div>
+
+
+
+	<main id="mainPage">
+
+
+<!--	<div class="parent_div">
+
+				<div placeholder="LONGTYPE" contenteditable="true" onkeyup="space();" id="long" class="longtype"></div>
+
+	</div>
+
+-->
+
+				<div onkeydown="playAudio(event);" placeholder="LONGTYPE" contenteditable="true" id="long" class="longtype"></div>
+
+
+<!--
+
+<div class="fontColors">
+
+	<div class="colorful">
+	<span id="c1" style="background-color: #ffeb3b;" class="color" onclick="document.getElementById('long').style.color='#ffeb3b'"></span>
+	<span id="c1" style="background-color: #ffc107;" class="color" onclick="document.getElementById('long').style.color='#ffc107'"></span>
+	<span id="c1" style="background-color: #ff9800;" class="color" onclick="document.getElementById('long').style.color='#ff9800'"></span>
+	<span id="c1" style="background-color: #ff5722;" class="color" onclick="document.getElementById('long').style.color='#ff5722'"></span>
+	</div>
+
+	<div class="colorful">
+	<span id="c1" style="background-color: #9e9e9e;" class="color" onclick="document.getElementById('long').style.color='#9e9e9e'"></span>
+	<span id="c1" style="background-color: #795548;" class="color" onclick="document.getElementById('long').style.color='#795548'"></span>
+	<span id="c1" style="background-color: #607d8b;" class="color" onclick="document.getElementById('long').style.color='#607d8b'"></span>
+	<span id="c1" style="background-color: #ffffff;" class="color" onclick="document.getElementById('long').style.color='#ffffff'"></span>
+	</div>
+
+	<div class="colorful">
+	<span id="c1" style="background-color: red;" class="color" onclick="document.getElementById('long').style.color='red'"></span>
+	<span id="c1" style="background-color: blue;" class="color" onclick="document.getElementById('long').style.color='blue'"></span>
+	<span id="c1" style="background-color: yellow;" class="color" onclick="document.getElementById('long').style.color='yellow'"></span>
+	<span id="c1" style="background-color: green;" class="color" onclick="document.getElementById('long').style.color='green'"></span>
+	</div>
+
+</div>
+
+-->
+
+
+</main>
+
+	
+
+<script>
+
+	function showQuote() {
+
+
+					let quoteArray = allQuotes.match(/[^\r\n]+/g);
+					console.log(quoteArray[2]);
+
+	}
+
+	function nextQuote() {
+
+					let quoteArray = allQuotes.match(/[^\r\n]+/g);
+					let min=0;
+
+					//finding the count of array of quotes
+					let max = Number(quoteArray.length) - Number(1);
+
+					//finding a random quote between max and minimum values
+					let n = Math.floor(Math.random() * (max - min + 1) + min);
+					document.getElementById('qBox').innerHTML=quoteArray[n];
+
+	}
+
+
+	function nextSnippet() {
+
+					let quoteArray = allSnippets.match(/[^\r\n]+/g);
+					let min=0;
+
+					//finding the count of array of quotes
+					let max = Number(quoteArray.length) - Number(1);
+
+					//finding a random quote between max and minimum values
+					let n = Math.floor(Math.random() * (max - min + 1) + min);
+					document.getElementById('sBox').innerHTML=quoteArray[n];
+
+	}
+
+</script>
+
+</body>
+
+</html>
